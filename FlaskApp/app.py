@@ -10,7 +10,7 @@ app = Flask(__name__)
 def hello_world():
 
     # Full Script.
-    im = Image.open(r'C:\Users\franco.d.simonelli\Desktop\FlaskApp\IMG_20210203_120014844.jpg')
+    im = Image.open('https://raw.githubusercontent.com/francosimonelli/webapp/main/FlaskApp/IMG_20210203_120014844.jpg')
     data = io.BytesIO()
     im.save(data, "JPEG")
     encoded_img_data = base64.b64encode(data.getvalue())
